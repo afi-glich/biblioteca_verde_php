@@ -32,30 +32,36 @@ Un'applicazione web per la gestione di libri, copie e utenti, sviluppata in **La
    ```bash
    git clone https://github.com/tuo-utente/progetto-biblioteca.git
    cd progetto-biblioteca
-Installa le dipendenze PHP:
-
+# 1. Installa le dipendenze PHP del progetto (richiede Composer installato)
 composer install
-Copia il file .env:
 
+# 2. Crea il file di configurazione dell'ambiente partendo dall'esempio
 cp .env.example .env
-Configura il database nel file .env:
-DB_DATABASE=nome_db
-DB_USERNAME=tuo_utente
-DB_PASSWORD=la_tua_password
-Genera la chiave dell'app:
 
+# 3. Modifica il file .env con le tue credenziali database
+# Esempio:
+# DB_DATABASE=nome_database
+# DB_USERNAME=nome_utente
+# DB_PASSWORD=password_utente
+
+# 4. Genera la chiave dell'applicazione Laravel
 php artisan key:generate
-Esegui le migrazioni e (opzionale) i seed:
 
+# 5. Esegui le migrazioni per creare le tabelle nel database
+php artisan migrate
 
-php artisan migrate --seed
-(Facoltativo) Compila gli asset frontend:
+# (Opzionale) Se hai seeders, puoi popolare il DB con dati di esempio
+php artisan db:seed
 
-npm install && npm run dev
-Avvia il server:
+# 6. (Facoltativo) Se usi Laravel Mix/Vite, installa e compila gli asset frontend
+npm install
+npm run dev
 
-
+# 7. Avvia il server di sviluppo Laravel
 php artisan serve
+
+# Ora puoi accedere al progetto visitando http://localhost:8000
+
 👤 Credenziali di accesso
 Ruolo	Email	Password
 Admin	admin@admin.com	password
