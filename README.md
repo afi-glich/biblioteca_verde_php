@@ -34,47 +34,27 @@ Un'applicazione web per la gestione di libri, copie e utenti, sviluppata in **La
    cd progetto-biblioteca
 Installa le dipendenze PHP:
 
-bash
-Copia
-Modifica
 composer install
 Copia il file .env:
 
-bash
-Copia
-Modifica
 cp .env.example .env
 Configura il database nel file .env:
-
-ini
-Copia
-Modifica
 DB_DATABASE=nome_db
 DB_USERNAME=tuo_utente
 DB_PASSWORD=la_tua_password
 Genera la chiave dell'app:
 
-bash
-Copia
-Modifica
 php artisan key:generate
 Esegui le migrazioni e (opzionale) i seed:
 
-bash
-Copia
-Modifica
+
 php artisan migrate --seed
 (Facoltativo) Compila gli asset frontend:
 
-bash
-Copia
-Modifica
 npm install && npm run dev
 Avvia il server:
 
-bash
-Copia
-Modifica
+
 php artisan serve
 👤 Credenziali di accesso
 Ruolo	Email	Password
