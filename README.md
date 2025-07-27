@@ -32,7 +32,7 @@ Un'applicazione web per la gestione di libri, copie e utenti, sviluppata in **La
    ```bash
    git clone https://github.com/tuo-utente/progetto-biblioteca.git
    cd progetto-biblioteca
-# 1. Installa le dipendenze PHP del progetto (richiede Composer installato)
+### 1. Installa le dipendenze PHP del progetto (richiede Composer installato)
 composer install
 
 # 2. Crea il file di configurazione dell'ambiente partendo dall'esempio
